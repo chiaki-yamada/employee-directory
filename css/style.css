@@ -1,6 +1,34 @@
 body {
   position: relative;
+  color:dimgray;
+  font-size: 0.75rem;
+  background-color: whitesmoke;
 }
+h1, h2{
+  font-size: 1rem;
+  color:black;
+}
+
+
+
+/* card */
+.card {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  padding: 25px;
+  
+}
+
+/* avatar */
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
 
 .overlay {
   position: absolute;
@@ -31,3 +59,4 @@ body {
 .hidden {
   display: none;
 }
+
