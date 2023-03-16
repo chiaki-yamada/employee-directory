@@ -3,22 +3,39 @@ body {
   color:dimgray;
   font-size: 0.75rem;
   background-color: whitesmoke;
+  width: 85%;
+  margin: auto;
+  
 }
+
 h1, h2{
   font-size: 1rem;
   color:black;
 }
 
-
+/* header */
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 25px; 
+  
+}
 
 /* card */
 .card {
   background-color: #fff;
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 10px;
   display: flex;
   padding: 25px;
   
+}
+
+.text-container {
+  padding: 0 20px;
 }
 
 /* avatar */
@@ -26,7 +43,7 @@ h1, h2{
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  margin-right: 20px;
+
 }
 
 
@@ -48,6 +65,7 @@ h1, h2{
   border-radius: 5px;
   padding: 30px 20px;
   position: relative;
+  text-align: center;
 }
 
 .modal-close {
@@ -59,4 +77,19 @@ h1, h2{
 .hidden {
   display: none;
 }
+
+
+@media (min-width: 768px) {
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    
+    
+  }
+
+  
+}
+  
 
